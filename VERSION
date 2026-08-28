@@ -1,0 +1,9 @@
+Module-Name: PyMApp_plat_jse
+Description: Módulo de plataforma de PyMApp que implementa la integración y ejecución sobre entorno Java SE.
+Version: 1.6.2
+Release-Date: 2025-07-30
+Status: production
+Java-Version: Java 8+
+License: Mozilla Public License Version 2.0.
+Repo-URL: https://github.com/feroldev/PyMApp_plat_jse
+

@@ -1,0 +1,20 @@
+@startuml
+
+skinparam componentStyle rectangle
+
+component PyMApp_plat_jse
+
+component ConfigPLAT
+component LogPLAT
+component I18n
+component LogFormatLine
+component Kernel
+
+PyMApp_plat_jse --> ConfigPLAT
+PyMApp_plat_jse --> LogPLAT
+PyMApp_plat_jse --> I18n
+PyMApp_plat_jse --> Kernel
+LogPLAT --> LogFormatLine
+
+@enduml
+

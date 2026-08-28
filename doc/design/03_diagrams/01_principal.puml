@@ -1,0 +1,23 @@
+@startuml
+
+package "Application" {
+    [User Application]
+}
+
+package "PyMApp Base (mod)" {
+    interface ModPLAT
+}
+
+package "Platform Layer" {
+
+    [PyMApp_plat_jse]
+    [PyMApp_plat_android]
+}
+
+[User Application] --> ModPLAT
+
+ModPLAT <|.. [PyMApp_plat_jse]
+ModPLAT <|.. [PyMApp_plat_android]
+
+@enduml
+

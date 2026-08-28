@@ -1,0 +1,18 @@
+PROJECT_NAME=PyMApp Framework
+
+PRODUCT_NAME=PyMApp PLAT.mod
+
+MOD_NAME=PyMApp_plat_jse
+
+DATE=2025/07/30
+STATUS=production
+DESCRIPTION=Módulo de plataforma de PyMApp que implementa la integración y ejecución sobre entorno Java SE.
+VERSION=1.6.2
+
+REPO_TYPE=github
+REPO_URL=https://github.com/feroldev/PyMApp_plat_jse
+
+LICENSE_TYPE=Mozilla Public License Version 2.0.
+AUTHOR=OLMEDO Fernando R. {ferol.dev}
+COPYRIGHT=OLMEDO Fernando R. {ferol.dev} 1999-2025
+

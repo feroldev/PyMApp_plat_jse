@@ -1,0 +1,37 @@
+@startuml
+
+actor Application
+
+participant Kernel
+participant PyMApp_plat_jse
+participant Config
+participant Log
+participant I18n
+
+Application -> PyMApp_plat_jse : initialize(args)
+
+PyMApp_plat_jse -> Kernel : getState() != RUNNING/INITIALIZING ?
+Kernel --> PyMApp_plat_jse : OK (o KernelIllegalStateException)
+
+PyMApp_plat_jse -> PyMApp_plat_jse : state = INITIALIZING
+
+PyMApp_plat_jse -> Config : new Config(MOD_CONFIG_NAME)
+
+PyMApp_plat_jse -> Config : getKey("mod.Log.TypeActive.*")
+PyMApp_plat_jse -> Config : getKey("mod.Log.LevelActive.*")
+PyMApp_plat_jse -> Config : getKey("mod.Log.Bytes")
+PyMApp_plat_jse -> Config : getKey("mod.Log.Rotation")
+PyMApp_plat_jse -> Config : getKey("mod.i18n.resPath")
+
+PyMApp_plat_jse -> Log : new Log(MOD_LOG_NAME, typeStatus, levelStatus, bytes, rotation)
+
+PyMApp_plat_jse -> I18n : new I18n(resPath)
+
+PyMApp_plat_jse -> PyMApp_plat_jse : state = RUNNING
+
+PyMApp_plat_jse -> Log : setLine(APPLICATION, INFORMATIONAL, "Módulo Inicializado con Exito")
+
+PyMApp_plat_jse --> Application : RUNNING
+
+@enduml
+

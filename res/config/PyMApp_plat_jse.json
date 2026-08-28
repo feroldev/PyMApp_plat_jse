@@ -1,0 +1,20 @@
+{
+  "mod.Log.TypeActive.SYSTEM": "true",
+  "mod.Log.TypeActive.APPLICATION": "true",
+  "mod.Log.TypeActive.EXCEPTION": "true",
+  "mod.Log.TypeActive.AUDIT": "true",
+  "mod.Log.TypeActive.DATABASE": "true",
+  "mod.Log.TypeActive.DEBUG": "false",
+  "mod.Log.LevelActive.EMERGENCY": "true",
+  "mod.Log.LevelActive.ALERT": "true",
+  "mod.Log.LevelActive.CRITICAL": "true",
+  "mod.Log.LevelActive.ERROR": "true",
+  "mod.Log.LevelActive.WARNING": "true",
+  "mod.Log.LevelActive.NOTICE": "true",
+  "mod.Log.LevelActive.INFORMATIONAL": "true",
+  "mod.Log.LevelActive.DEBUG": "false",
+  "mod.Log.Bytes": "",
+  "mod.Log.Rotation": "",
+  "mod.i18n.resPath": ""
+}
+

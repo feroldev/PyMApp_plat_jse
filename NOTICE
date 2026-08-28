@@ -1,0 +1,32 @@
+PyMApp PLAT.mod - Java SE
+PyMApp_plat_jse
+
+Copyright (c) 1999-2025 OLMEDO Fernando R. {ferol.dev}
+
+Licensed under the Mozilla Public License Version 2.0.
+You may obtain a copy of the License at https://mozilla.org/MPL/2.0/.
+
+Project repository: https://github.com/feroldev/PyMApp_plat_jse
+
+---
+
+This product includes software developed as part of the PyMApp Framework.
+
+Dependencies:
+
+* PyMApp_base (dev.ferol.pymapp.base)
+  Copyright (c) 1999-2025 OLMEDO Fernando R. {ferol.dev}
+  Mozilla Public License Version 2.0
+  https://github.com/feroldev/PyMApp_base
+
+* PyMApp_util (dev.ferol.pymapp.util)
+  Copyright (c) 1999-2025 OLMEDO Fernando R. {ferol.dev}
+  Mozilla Public License Version 2.0
+  https://github.com/feroldev/PyMApp_util
+
+Test-only dependencies:
+
+* JUnit 4 (test sources under src/test/java)
+  https://junit.org/junit4/
+  Eclipse Public License 1.0
+

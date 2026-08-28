@@ -1,0 +1,36 @@
+@startuml
+
+skinparam componentStyle rectangle
+
+package "PyMApp Base" {
+
+interface ModManager
+interface ModPLAT
+
+class Config
+class Log
+class I18n
+class LogFormatLine
+}
+
+package "PyMApp Java SE Platform Module" {
+
+class PyMApp_plat_jse
+
+class ConfigPLAT
+class LogPLAT
+}
+
+ModManager <|-- ModPLAT
+ModPLAT <|.. PyMApp_plat_jse
+
+PyMApp_plat_jse --> Config
+PyMApp_plat_jse --> Log
+PyMApp_plat_jse --> I18n
+
+PyMApp_plat_jse ..> ConfigPLAT
+PyMApp_plat_jse ..> LogPLAT
+LogPLAT --> LogFormatLine
+
+@enduml
+

@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"dev.ferol.pymapp.plat.jse"},{"l":"dev.ferol.pymapp.plat.jse.ccs"},{"l":"dev.ferol.pymapp.plat.jse.i18n.text"}];updateSearchResults();

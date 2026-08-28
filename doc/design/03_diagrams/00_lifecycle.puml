@@ -1,0 +1,21 @@
+@startuml
+
+[*] --> CREATED
+
+CREATED --> INITIALIZING : initialize()
+
+INITIALIZING --> RUNNING : inicialización exitosa
+
+INITIALIZING --> CREATED : error (reintento permitido)
+
+INITIALIZING --> STOPPED : shutdown()
+
+RUNNING --> STOPPED : shutdown()
+
+RUNNING --> FAILED : error en shutdown()
+
+FAILED --> [*]
+STOPPED --> [*]
+
+@enduml
+
