@@ -193,6 +193,32 @@ License: Mozilla Public License Version 2.0.
 
 ---
 
+## Maven Central
+
+PyMApp PLAT.mod - Java SE is available from Maven Central.
+
+### Maven
+
+```xml
+<dependency>
+    <groupId>dev.ferol</groupId>
+    <artifactId>pymapp-plat-jse</artifactId>
+    <version>1.6.2</version>
+</dependency>
+```
+
+### Gradle
+
+```gradle
+implementation 'dev.ferol:pymapp-plat-jse:1.6.2'
+```
+
+The artifact is available at:
+
+[PyMApp PLAT.mod - Java SE on Maven Central](https://central.sonatype.com/artifact/dev.ferol/pymapp-plat-jse?utm_source=chatgpt.com)
+
+---
+
 ## License
 
 Copyright (c) 1999-2025 OLMEDO Fernando R. {ferol.dev}
